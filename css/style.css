@@ -1,0 +1,30 @@
+html, body {
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+  font-size: 0.9rem;
+  background: #f4ece9;
+  z-index: -1;
+}
+
+h1, h2, h3 {
+  font-family: "Lora", serif;
+  color: #24456b;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 2000px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+}
+/*# sourceMappingURL=style.css.map */

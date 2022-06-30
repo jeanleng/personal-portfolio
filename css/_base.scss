@@ -1,0 +1,31 @@
+@import "./assets";
+
+html, body {
+    margin: 0;
+    font-family: $fontFamily;
+    font-size: 0.9rem;
+    background: $bgColor;
+    z-index: -1;
+}
+
+h1, h2, h3 {
+    font-family: $headerFont;
+    color: $headerColor;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 2000px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+}
