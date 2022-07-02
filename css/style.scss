@@ -1,3 +1,52 @@
 @import "./assets";
 @import "./base";
 
+main {
+    background: $bgColor2;
+    padding: 2em 0;
+    transform: skewY(-3deg);
+    font-size: 1.2rem;
+    
+    & > div, section {
+        transform: skewY(3deg);
+        display: flex;
+        align-items: center;
+    }
+}
+
+.title {
+    display: block;
+    font-family: $titleFont;
+    text-align: center;
+    font-size: 3.5rem;
+}
+
+section.feature {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 1em;
+
+    h1 {
+        padding-top: 0.5em;
+    }
+    p {
+        padding: 0.5em 3em 1em;
+    }
+
+    .ft-content {
+        display: block;
+        margin: 0 auto;
+        width: 75vw;
+        background: $white;
+        border-bottom: 0.3em solid $accentColor;
+        text-align: center;
+    }
+
+    .ft-cover {
+        display: block;
+        width: 75vw;
+        height: 75vw;
+        background-image: url(../images/flower-down.jpg);
+        background-size: cover;
+    }
+}
