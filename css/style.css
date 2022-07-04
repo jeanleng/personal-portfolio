@@ -17,7 +17,7 @@ a {
 
 .wrapper {
   width: 100%;
-  max-width: 2000px;
+  max-width: 1600px;
   margin: 0 auto;
   padding: 0;
 }
@@ -74,10 +74,11 @@ nav a:hover {
 
 main {
   background: #e3e9f0;
-  padding: 2em 0;
+  padding: 2em;
+  padding-bottom: 6em;
   -webkit-transform: skewY(-3deg);
           transform: skewY(-3deg);
-  font-size: 1.2rem;
+  margin-top: 3em;
 }
 
 main > div, main section {
@@ -94,8 +95,11 @@ main > div, main section {
 .title {
   display: block;
   font-family: "Leckerli One", cursive;
+  font-weight: 500;
   text-align: center;
   font-size: 3.5rem;
+  -webkit-transform: skewY(-3deg);
+          transform: skewY(-3deg);
 }
 
 section.feature {
@@ -106,21 +110,23 @@ section.feature {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.2rem;
   grid-gap: 1em;
-}
-
-section.feature h1 {
-  padding-top: 0.5em;
+  width: calc(100vw - 4em);
 }
 
 section.feature p {
-  padding: 0.5em 3em 1em;
+  padding: 0 3em;
 }
 
 section.feature .ft-content {
   display: block;
   margin: 0 auto;
-  width: 75vw;
+  padding: 1.5em 0;
+  width: 100%;
   background: #fff;
   border-bottom: 0.3em solid #d19c8d;
   text-align: center;
@@ -128,9 +134,65 @@ section.feature .ft-content {
 
 section.feature .ft-cover {
   display: block;
-  width: 75vw;
-  height: 75vw;
+  width: 100%;
+  padding-top: 100%;
   background-image: url(../images/flower-down.jpg);
   background-size: cover;
+}
+
+@media only screen and (min-width: 720px) {
+  section.feature .ft-content {
+    width: 75vw;
+    margin: 0 1em;
+  }
+  section.feature .ft-cover {
+    width: 75vw;
+    height: 75vw;
+    padding-top: 0;
+  }
+}
+
+@media only screen and (min-width: 920px) {
+  section.feature {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  section.feature .intro {
+    position: relative;
+    left: 3em;
+    bottom: 2em;
+    z-index: 2;
+  }
+  section.feature .intro .title {
+    margin: 0;
+    padding: 0.5em;
+  }
+  section.feature .intro .ft-content {
+    width: 50vw;
+    max-width: 500px;
+    padding: 1em 2em;
+  }
+  section.feature .intro .ft-content h2, section.feature .intro .ft-content p {
+    padding: 0;
+  }
+  section.feature .ft-cover {
+    position: relative;
+    right: 3em;
+    width: 65vh;
+    min-width: 300px;
+    height: 68vh;
+    min-height: 400px;
+    -webkit-transform: scaleX(-1) translateY(-0.5em);
+            transform: scaleX(-1) translateY(-0.5em);
+    z-index: 1;
+    border-top: 0.3em solid #d19c8d;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
 }
 /*# sourceMappingURL=style.css.map */

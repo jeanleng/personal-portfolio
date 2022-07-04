@@ -3,9 +3,10 @@
 
 main {
     background: $bgColor2;
-    padding: 2em 0;
+    padding: 2em;
+    padding-bottom: 6em;
     transform: skewY(-3deg);
-    font-size: 1.2rem;
+    margin-top: 3em;
     
     & > div, section {
         transform: skewY(3deg);
@@ -17,26 +18,29 @@ main {
 .title {
     display: block;
     font-family: $titleFont;
+    font-weight: 500;
     text-align: center;
     font-size: 3.5rem;
+    transform: skewY(-3deg);
 }
 
 section.feature {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    font-size: 1.2rem;
     grid-gap: 1em;
-
-    h1 {
-        padding-top: 0.5em;
-    }
+    width: calc(100vw - 4em);
+    
     p {
-        padding: 0.5em 3em 1em;
+        padding: 0 3em;
     }
 
     .ft-content {
         display: block;
         margin: 0 auto;
-        width: 75vw;
+        padding: 1.5em 0;
+        width: 100%;
         background: $white;
         border-bottom: 0.3em solid $accentColor;
         text-align: center;
@@ -44,9 +48,67 @@ section.feature {
 
     .ft-cover {
         display: block;
-        width: 75vw;
-        height: 75vw;
+        width: 100%;
+        padding-top: 100%;
         background-image: url(../images/flower-down.jpg);
         background-size: cover;
+    }
+}
+
+@media only screen and (min-width: 720px) {
+    section.feature {
+        
+        .ft-content {
+            width: 75vw;
+            margin: 0 1em;
+        }
+        
+        .ft-cover {
+            width: 75vw;
+            height: 75vw;
+            padding-top: 0;
+        }
+    }
+
+}
+
+@media only screen and (min-width: 920px) {
+    section.feature {
+        flex-direction: row;
+        align-items: flex-end;
+
+        .intro {
+            position: relative;
+            left: 3em;
+            bottom: 2em;
+            z-index: 2;
+
+            .title {
+                margin: 0;
+                padding: 0.5em;
+            }
+            .ft-content {
+                width: 50vw;
+                max-width: 500px;
+                padding: 1em 2em;
+                
+                h2, p {
+                    padding: 0;
+                }
+            }
+        }
+        
+        .ft-cover {
+            position: relative;
+            right: 3em;
+            width: 65vh;
+            min-width: 300px;
+            height: 68vh;
+            min-height: 400px;
+            transform: scaleX(-1) translateY(-0.5em);
+            z-index: 1;
+            border-top: 0.3em solid #d19c8d;
+            box-sizing: border-box;
+        }
     }
 }
