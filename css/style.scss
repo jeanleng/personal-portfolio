@@ -3,8 +3,7 @@
 
 main {
     background: $bgColor2;
-    padding: 2em;
-    padding-bottom: 6em;
+    padding: 4em 2em;
     transform: skewY(-3deg);
     margin-top: 3em;
     
@@ -17,6 +16,7 @@ main {
 
 .title {
     display: block;
+    margin-top: 0;
     font-family: $titleFont;
     font-weight: 500;
     text-align: center;
@@ -60,14 +60,15 @@ section.feature {
     section.feature {
         
         .ft-content {
+            margin: 0;
             width: 75vw;
-            margin: 0 1em;
         }
         
         .ft-cover {
+            margin: 0;
+            padding-top: 0;
             width: 75vw;
             height: 75vw;
-            padding-top: 0;
         }
     }
 

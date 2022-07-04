@@ -74,8 +74,7 @@ nav a:hover {
 
 main {
   background: #e3e9f0;
-  padding: 2em;
-  padding-bottom: 6em;
+  padding: 4em 2em;
   -webkit-transform: skewY(-3deg);
           transform: skewY(-3deg);
   margin-top: 3em;
@@ -94,6 +93,7 @@ main > div, main section {
 
 .title {
   display: block;
+  margin-top: 0;
   font-family: "Leckerli One", cursive;
   font-weight: 500;
   text-align: center;
@@ -143,13 +143,14 @@ section.feature .ft-cover {
 
 @media only screen and (min-width: 720px) {
   section.feature .ft-content {
+    margin: 0;
     width: 75vw;
-    margin: 0 1em;
   }
   section.feature .ft-cover {
+    margin: 0;
+    padding-top: 0;
     width: 75vw;
     height: 75vw;
-    padding-top: 0;
   }
 }
 
