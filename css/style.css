@@ -43,7 +43,7 @@ nav {
 nav a {
   display: inline-block;
   padding: 1em 2em;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   text-transform: uppercase;
   font-weight: 600;
   color: #24456b;
@@ -116,6 +116,7 @@ section.feature {
   font-size: 1.2rem;
   grid-gap: 1em;
   width: calc(100vw - 4em);
+  margin: 0 auto;
 }
 
 section.feature p {
