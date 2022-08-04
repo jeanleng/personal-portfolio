@@ -93,11 +93,10 @@ nav a:hover {
 
 .title {
   display: block;
-  margin-top: 0;
   font-family: "Leckerli One", cursive;
   font-weight: 500;
   text-align: center;
-  font-size: 3.5rem;
+  font-size: 3rem;
   -webkit-transform: skewY(-3deg);
           transform: skewY(-3deg);
 }
@@ -120,8 +119,19 @@ main .project .site {
   main {
     padding: 0 5em;
   }
-  .site {
-    max-width: 800px;
+  main .project {
+    margin: 0 auto;
+    max-width: 700px;
+  }
+}
+
+@media only screen and (min-width: 920px) {
+  main {
+    padding: 0 10em;
+  }
+  main .project {
+    margin: 0 auto;
+    max-width: 900px;
   }
 }
 /*# sourceMappingURL=portfolio.css.map */

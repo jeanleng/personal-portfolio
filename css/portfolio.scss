@@ -16,11 +16,10 @@
 
 .title {
     display: block;
-    margin-top: 0;
     font-family: $titleFont;
     font-weight: 500;
     text-align: center;
-    font-size: 3.5rem;
+    font-size: 3rem;
     transform: skewY(-3deg);
 }
 
@@ -30,22 +29,10 @@ main {
 
     .project {
         padding: 2em 0;
-        
-        // .s1{
-        //     background: url(../images/sweetery-site.png);
-        // }
-        // .s2{
-        //     background: url(../images/fe-gamesite.png);
-        // }
-        // .s3{
-        //     background: url(../images/seasons-site.png);
-        // }
 
         .site {
             width: 100%;
             height: auto;
-            // background-size: cover;
-            // background-position: center;
         }
     }
 }
@@ -53,8 +40,21 @@ main {
 @media only screen and (min-width: 720px) {
     main {
         padding: 0 5em;
+        
+        .project {
+            margin: 0 auto;
+            max-width: 700px;
+        }
     }
-    .site {
-        max-width: 800px;
+}
+
+@media only screen and (min-width: 920px) {
+    main {
+        padding: 0 10em;
+
+        .project {
+            margin: 0 auto;
+            max-width: 900px;
+        }
     }
 }
