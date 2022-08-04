@@ -3,7 +3,7 @@
 html, body {
     margin: 0;
     font-family: $fontFamily;
-    font-size: 0.9rem;
+    font-size: 1rem;
     background: $bgColor;
     z-index: -1;
 }
@@ -43,7 +43,7 @@ nav {
     a {
         display: inline-block;
         padding: 1em 2em;
-        font-size: 0.9rem;
+        font-size: 0.8rem;
         text-transform: uppercase;
         font-weight: 600;
         color: $headerColor;
