@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <title>Contact</title>
+    <link rel="stylesheet" href="../css/contact.css">
     
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,20 +25,15 @@
         </header>
         
         <main>
-            <section class="feature">
-                <div class="intro">
-                    <h1 class="title">JeanE.</h1>
-                    <div class="ft-content">
-                        <h2>Welcome</h2>
-                        <p>
-                            Hi, my name is Jean, and I'm a graphic designer. I design websites and I make digital artwork.
-                            <br>
-                            The aesthetics of my surroundings inspire me to create.
-                        </p>
-                    </div>
-                </div>
-                <div class="ft-cover"></div>
-            </section>
+            <h1>Contact me!</h1>
+            <form action="https://formsubmit.co/eng.jeanlin@gmail.com" method="POST">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_subject" value="Client Email">
+                <input class="email" type="email" name="email" placeholder="Email Address" required>
+                <textarea class="message" name="message" placeholder="Email Message" required>
+                <input type="hidden" name="_next" value="https://jeanleng.netlify.app/thankyou.html">
+                <button type="submit">Send</button>
+           </form>
         </main>
     </div>
 </body>

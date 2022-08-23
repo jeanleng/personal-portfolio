@@ -1,0 +1,42 @@
+@import "./assets";
+@import "./base";
+
+main {
+    text-align: center;
+    
+    form {
+        margin: 0 auto;
+        padding: 0.5em;
+    }
+    input {
+        display: block;
+        padding: 0.75em;
+        margin: 1em auto;
+        border: 0;
+        border-radius: 3px;
+        width: calc(100% - 1.5em);
+    }
+    .email {
+
+    }
+
+    .message {
+        height: 300px;
+        text-align: left;
+        vertical-align: top;
+    }
+
+    button {
+        border: 0;
+        border-radius: 3px;
+        padding: 1em 4em;
+        background: $accentColor;
+        color: $white;
+
+        &:hover {
+            cursor: pointer;
+            background: $headerColor;
+            transition-duration: 500ms;
+        }
+    }
+}
