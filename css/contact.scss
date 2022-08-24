@@ -2,28 +2,43 @@
 @import "./base";
 
 main {
+    background: $bgColor2;
+    padding: 1em;
+    transform: skewY(-3deg);
+    margin-top: 3em;
+        
+    & > input, form {
+        transform: skewY(3deg);
+    }
+
     text-align: center;
+
+    h1 {
+        display: block;
+        font-family: $titleFont;
+        font-weight: 500;
+        text-align: center;
+        font-size: 3rem;
+    }
     
     form {
         margin: 0 auto;
         padding: 0.5em;
     }
-    input {
+
+    input, textarea {
         display: block;
         padding: 0.75em;
         margin: 1em auto;
         border: 0;
         border-radius: 3px;
-        width: calc(100% - 1.5em);
+        min-width: calc(100% - 1.5em);
+        max-width: calc(100% - 1.5em);
+        font-family: $fontFamily;
     }
-    .email {
 
-    }
-
-    .message {
-        height: 300px;
-        text-align: left;
-        vertical-align: top;
+    textarea {
+        min-height: 200px;
     }
 
     button {
@@ -38,5 +53,28 @@ main {
             background: $headerColor;
             transition-duration: 500ms;
         }
+    }
+}
+
+.thanks {
+    margin: 50% auto;
+    display: block;
+    font-family: $titleFont;
+    font-weight: 500;
+    text-align: center;
+    font-size: 3rem;
+}
+
+@media only screen and (min-width: 720px) {
+    
+    form, input, textarea {
+        max-width: 700px;
+    }
+}
+
+@media only screen and (min-width: 920px) {
+    
+    form, input, textarea {
+        max-width: 900px;
     }
 }

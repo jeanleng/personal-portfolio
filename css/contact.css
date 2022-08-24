@@ -73,7 +73,25 @@ nav a:hover {
 }
 
 main {
+  background: #e3e9f0;
+  padding: 1em;
+  -webkit-transform: skewY(-3deg);
+          transform: skewY(-3deg);
+  margin-top: 3em;
   text-align: center;
+}
+
+main > input, main form {
+  -webkit-transform: skewY(3deg);
+          transform: skewY(3deg);
+}
+
+main h1 {
+  display: block;
+  font-family: "Leckerli One", cursive;
+  font-weight: 500;
+  text-align: center;
+  font-size: 3rem;
 }
 
 main form {
@@ -81,19 +99,19 @@ main form {
   padding: 0.5em;
 }
 
-main input {
+main input, main textarea {
   display: block;
   padding: 0.75em;
   margin: 1em auto;
   border: 0;
   border-radius: 3px;
-  width: calc(100% - 1.5em);
+  min-width: calc(100% - 1.5em);
+  max-width: calc(100% - 1.5em);
+  font-family: "Nunito", sans-serif;
 }
 
-main .message {
-  height: 300px;
-  text-align: left;
-  vertical-align: top;
+main textarea {
+  min-height: 200px;
 }
 
 main button {
@@ -109,5 +127,26 @@ main button:hover {
   background: #24456b;
   -webkit-transition-duration: 500ms;
           transition-duration: 500ms;
+}
+
+.thanks {
+  margin: 50% auto;
+  display: block;
+  font-family: "Leckerli One", cursive;
+  font-weight: 500;
+  text-align: center;
+  font-size: 3rem;
+}
+
+@media only screen and (min-width: 720px) {
+  form, input, textarea {
+    max-width: 700px;
+  }
+}
+
+@media only screen and (min-width: 920px) {
+  form, input, textarea {
+    max-width: 900px;
+  }
 }
 /*# sourceMappingURL=contact.css.map */
