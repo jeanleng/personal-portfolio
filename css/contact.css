@@ -73,11 +73,9 @@ nav a:hover {
 }
 
 main {
-  background: #e3e9f0;
   padding: 1em;
   -webkit-transform: skewY(-3deg);
           transform: skewY(-3deg);
-  margin-top: 3em;
   text-align: center;
 }
 

@@ -2,10 +2,8 @@
 @import "./base";
 
 main {
-    background: $bgColor2;
     padding: 1em;
     transform: skewY(-3deg);
-    margin-top: 3em;
         
     & > input, form {
         transform: skewY(3deg);
