@@ -8,10 +8,14 @@ main {
     padding: 0 2em;
     transform: skewY(-3deg);
     
-    & > div, section {
+    & > div {
         transform: skewY(3deg);
-        display: flex;
         align-items: center;
+    }
+
+    .about {
+        display: grid;
+        grid-gap: 1.5em;
     }
 
     h1 {
@@ -22,12 +26,29 @@ main {
         font-size: 3rem;
         transform: skewY(-3deg);
     }
+
+    .cover {
+        display: block;
+        width: 100%;
+        padding: 50% 0;
+        background-image: url(../images/about-profile.jpg);
+        background-size: cover;
+        background-position-x: 40%;
+        background-repeat: no-repeat;
+    }
     
-    .bio {
+    .bio, .cta {
         background: $white;
-        padding: 1em 2em;
-        margin: 1em auto;
+        padding: 1.5em 3em;
         border-top: 0.3em solid $accentColor;
+        
+        p {
+            text-align: left;
+        }
+    }
+
+    .cta {
+        margin: 1.5em 0;
     }
 }
 
@@ -43,5 +64,25 @@ main {
    
     main {
         max-width: 900px;
+
+        .about {
+            grid-template-areas: 'bio pic';
+                
+            .cover {
+                grid-area: pic;
+                width: 450px;
+                height: 100%;
+                padding: 0;
+            }
+
+            .bio {
+                grid-area: bio;
+                margin: 0;
+            }
+        }
+
+        .cta {
+            margin: 1.5em 0;
+        }
     }
 }
