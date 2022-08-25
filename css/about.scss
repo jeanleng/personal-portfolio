@@ -3,9 +3,16 @@
 
 main {
     margin: 0 auto;
-    padding: 1em;
-    width: calc(100% - 2 * 1em);
+    width: calc(100% - 2 * 2em);
     text-align: center;
+    padding: 0 2em;
+    transform: skewY(-3deg);
+    
+    & > div, section {
+        transform: skewY(3deg);
+        display: flex;
+        align-items: center;
+    }
 
     h1 {
         display: block;
@@ -16,7 +23,12 @@ main {
         transform: skewY(-3deg);
     }
     
-    
+    .bio {
+        background: $white;
+        padding: 1em 2em;
+        margin: 1em auto;
+        border-top: 0.3em solid $accentColor;
+    }
 }
 
 

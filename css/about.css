@@ -75,9 +75,22 @@ nav a:hover {
 
 main {
   margin: 0 auto;
-  padding: 1em;
-  width: calc(100% - 2 * 1em);
+  width: calc(100% - 2 * 2em);
   text-align: center;
+  padding: 0 2em;
+  -webkit-transform: skewY(-3deg);
+          transform: skewY(-3deg);
+}
+
+main > div, main section {
+  -webkit-transform: skewY(3deg);
+          transform: skewY(3deg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 main h1 {
@@ -88,6 +101,13 @@ main h1 {
   font-size: 3rem;
   -webkit-transform: skewY(-3deg);
           transform: skewY(-3deg);
+}
+
+main .bio {
+  background: #fff;
+  padding: 1em 2em;
+  margin: 1em auto;
+  border-top: 0.3em solid #d19c8d;
 }
 
 @media only screen and (min-width: 720px) {
