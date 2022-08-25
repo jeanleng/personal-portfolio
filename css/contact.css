@@ -140,7 +140,7 @@ main button:hover {
 
 @media only screen and (min-width: 920px) {
   form, input, textarea {
-    max-width: 900px;
+    max-width: 1000px;
   }
 }
 /*# sourceMappingURL=contact.css.map */

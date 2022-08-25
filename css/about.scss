@@ -63,14 +63,14 @@ main {
 @media only screen and (min-width: 920px) {
    
     main {
-        max-width: 900px;
+        max-width: 1000px;
 
         .about {
             grid-template-areas: 'bio pic';
                 
             .cover {
                 grid-area: pic;
-                width: 450px;
+                width: 500px;
                 height: 100%;
                 padding: 0;
             }
