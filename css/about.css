@@ -74,7 +74,9 @@ nav a:hover {
 }
 
 main {
+  margin: 0 auto;
   padding: 1em;
+  width: calc(100% - 2 * 1em);
   text-align: center;
 }
 
@@ -88,59 +90,15 @@ main h1 {
           transform: skewY(-3deg);
 }
 
-main form {
-  margin: 0 auto;
-  padding: 0.5em;
-}
-
-main input, main textarea {
-  display: block;
-  padding: 0.75em;
-  margin: 1em auto;
-  border: 0;
-  border-radius: 3px;
-  min-width: calc(100% - 1.5em);
-  max-width: calc(100% - 1.5em);
-  font-family: "Nunito", sans-serif;
-}
-
-main textarea {
-  min-height: 200px;
-}
-
-main button {
-  border: 0;
-  border-radius: 3px;
-  padding: 1em 4em;
-  background: #d19c8d;
-  color: #fff;
-}
-
-main button:hover {
-  cursor: pointer;
-  background: #24456b;
-  -webkit-transition-duration: 500ms;
-          transition-duration: 500ms;
-}
-
-.thanks {
-  display: block;
-  font-family: "Leckerli One", cursive;
-  font-weight: 500;
-  text-align: center;
-  font-size: 3rem;
-  margin: calc(50% - 6rem) auto;
-}
-
 @media only screen and (min-width: 720px) {
-  form, input, textarea {
+  main {
     max-width: 700px;
   }
 }
 
 @media only screen and (min-width: 920px) {
-  form, input, textarea {
+  main {
     max-width: 900px;
   }
 }
-/*# sourceMappingURL=contact.css.map */
+/*# sourceMappingURL=about.css.map */
