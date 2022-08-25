@@ -75,9 +75,9 @@ nav a:hover {
 
 main {
   margin: 0 auto;
+  padding: 0 2em;
   width: calc(100% - 2 * 2em);
   text-align: center;
-  padding: 0 2em;
   -webkit-transform: skewY(-3deg);
           transform: skewY(-3deg);
 }
@@ -93,7 +93,11 @@ main > div {
 main .about {
   display: -ms-grid;
   display: grid;
-  grid-gap: 1.5em;
+  grid-gap: 1.2em;
+}
+
+main .cta {
+  margin: 1.2em 0;
 }
 
 main h1 {
@@ -124,10 +128,6 @@ main .bio, main .cta {
 
 main .bio p, main .cta p {
   text-align: left;
-}
-
-main .cta {
-  margin: 1.5em 0;
 }
 
 @media only screen and (min-width: 720px) {

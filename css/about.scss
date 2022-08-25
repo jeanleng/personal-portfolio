@@ -3,9 +3,9 @@
 
 main {
     margin: 0 auto;
+    padding: 0 2em;
     width: calc(100% - 2 * 2em);
     text-align: center;
-    padding: 0 2em;
     transform: skewY(-3deg);
     
     & > div {
@@ -15,7 +15,11 @@ main {
 
     .about {
         display: grid;
-        grid-gap: 1.5em;
+        grid-gap: 1.2em;
+    }
+
+    .cta {
+        margin: 1.2em 0;
     }
 
     h1 {
@@ -47,9 +51,6 @@ main {
         }
     }
 
-    .cta {
-        margin: 1.5em 0;
-    }
 }
 
 

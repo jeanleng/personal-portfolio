@@ -2,8 +2,7 @@
 @import "./base";
 
 main {
-    padding: 1em;
-
+    padding: 2em;
     text-align: center;
 
     h1 {
@@ -17,13 +16,13 @@ main {
     
     form {
         margin: 0 auto;
-        padding: 0.5em;
+        width: 100%;
     }
 
     input, textarea {
         display: block;
         padding: 0.75em;
-        margin: 1em auto;
+        margin: 1.2em auto;
         border: 0;
         border-radius: 3px;
         min-width: calc(100% - 1.5em);
@@ -51,12 +50,17 @@ main {
 }
 
 .thanks {
-    display: block;
-    font-family: $titleFont;
-    font-weight: 500;
-    text-align: center;
-    font-size: 3rem;
-    margin: calc(50% - 6rem) auto;
+    display: flex;
+    margin: 0 auto;
+    height: 90vh;
+        
+    h1 {
+            margin: auto;
+            font-family: $titleFont;
+            font-weight: 500;
+            text-align: center;
+            font-size: 3rem;
+        }
 }
 
 @media only screen and (min-width: 720px) {
