@@ -40,7 +40,6 @@ nav {
   background: #f4e1da;
   border-top: 0.3em solid #d19c8d;
 }
-
 nav a {
   display: inline-block;
   padding: 1em 2em;
@@ -49,9 +48,8 @@ nav a {
   font-weight: 600;
   color: #24456b;
 }
-
 nav a::after {
-  content: '';
+  content: "";
   position: relative;
   display: block;
   height: 0.15em;
@@ -60,15 +58,12 @@ nav a::after {
   border-radius: 5px;
   opacity: 0%;
   bottom: -0.8em;
-  -webkit-transition: all ease-in-out 0.5s;
   transition: all ease-in-out 0.5s;
 }
-
 nav a:hover::after {
   opacity: 100;
   bottom: -0.3em;
 }
-
 nav a:hover {
   color: #d19c8d;
 }
@@ -76,40 +71,29 @@ nav a:hover {
 main {
   margin: 0 auto;
   padding: 0 2em;
-  width: calc(100% - 2 * 2em);
+  width: calc(100% - 4em);
   text-align: center;
-  -webkit-transform: skewY(-3deg);
-          transform: skewY(-3deg);
+  transform: skewY(-3deg);
 }
-
 main > div {
-  -webkit-transform: skewY(3deg);
-          transform: skewY(3deg);
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  transform: skewY(3deg);
+  align-items: center;
 }
-
 main .about {
-  display: -ms-grid;
   display: grid;
   grid-gap: 1.2em;
 }
-
 main .cta {
   margin: 1.2em 0;
 }
-
 main h1 {
   display: block;
   font-family: "Leckerli One", cursive;
   font-weight: 500;
   text-align: center;
   font-size: 3rem;
-  -webkit-transform: skewY(-3deg);
-          transform: skewY(-3deg);
+  transform: skewY(-3deg);
 }
-
 main .cover {
   display: block;
   width: 100%;
@@ -119,13 +103,11 @@ main .cover {
   background-position-x: 40%;
   background-repeat: no-repeat;
 }
-
 main .bio, main .cta {
   background: #fff;
   padding: 1.5em 3em;
   border-top: 0.3em solid #d19c8d;
 }
-
 main .bio p, main .cta p {
   text-align: left;
 }
@@ -135,30 +117,24 @@ main .bio p, main .cta p {
     max-width: 700px;
   }
 }
-
 @media only screen and (min-width: 920px) {
   main {
     max-width: 1000px;
   }
   main .about {
-        grid-template-areas: 'bio pic';
+    grid-template-areas: "bio pic";
   }
   main .about .cover {
-    -ms-grid-row: 1;
-    -ms-grid-column: 2;
     grid-area: pic;
     width: 500px;
     height: 100%;
     padding: 0;
   }
   main .about .bio {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
     grid-area: bio;
     margin: 0;
   }
   main .cta {
     margin: 1.5em 0;
   }
-}
-/*# sourceMappingURL=about.css.map */
+}/*# sourceMappingURL=about.css.map */

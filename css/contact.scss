@@ -2,7 +2,7 @@
 @import "./base";
 
 main {
-    padding: 0 2em;
+    padding: 0 2em 2em 2em;
     text-align: center;
 
     h1 {
@@ -16,13 +16,16 @@ main {
     
     form {
         margin: 0 auto;
-        width: 100%;
+        padding: 1em 1.5em;
+        background: $white;
+        border-radius: 3px;
     }
 
     input, textarea {
         display: block;
         padding: 0.75em;
-        margin: 1.2em auto;
+        margin: 1em auto;
+        background: #eee;
         border: 0;
         border-radius: 3px;
         min-width: calc(100% - 1.5em);
@@ -31,7 +34,7 @@ main {
     }
 
     textarea {
-        min-height: 200px;
+        min-height: 150px;
     }
 
     button {
@@ -66,13 +69,6 @@ main {
 @media only screen and (min-width: 720px) {
     
     form, input, textarea {
-        max-width: 700px;
-    }
-}
-
-@media only screen and (min-width: 920px) {
-    
-    form, input, textarea {
-        max-width: 1000px;
+        max-width: 650px;
     }
 }

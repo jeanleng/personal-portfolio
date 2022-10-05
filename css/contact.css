@@ -40,7 +40,6 @@ nav {
   background: #f4e1da;
   border-top: 0.3em solid #d19c8d;
 }
-
 nav a {
   display: inline-block;
   padding: 1em 2em;
@@ -49,9 +48,8 @@ nav a {
   font-weight: 600;
   color: #24456b;
 }
-
 nav a::after {
-  content: '';
+  content: "";
   position: relative;
   display: block;
   height: 0.15em;
@@ -60,54 +58,48 @@ nav a::after {
   border-radius: 5px;
   opacity: 0%;
   bottom: -0.8em;
-  -webkit-transition: all ease-in-out 0.5s;
   transition: all ease-in-out 0.5s;
 }
-
 nav a:hover::after {
   opacity: 100;
   bottom: -0.3em;
 }
-
 nav a:hover {
   color: #d19c8d;
 }
 
 main {
-  padding: 0 2em;
+  padding: 0 2em 2em 2em;
   text-align: center;
 }
-
 main h1 {
   display: block;
   font-family: "Leckerli One", cursive;
   font-weight: 500;
   text-align: center;
   font-size: 3rem;
-  -webkit-transform: skewY(-3deg);
-          transform: skewY(-3deg);
+  transform: skewY(-3deg);
 }
-
 main form {
   margin: 0 auto;
-  width: 100%;
+  padding: 1em 1.5em;
+  background: #fff;
+  border-radius: 3px;
 }
-
 main input, main textarea {
   display: block;
   padding: 0.75em;
-  margin: 1.2em auto;
+  margin: 1em auto;
+  background: #eee;
   border: 0;
   border-radius: 3px;
   min-width: calc(100% - 1.5em);
   max-width: calc(100% - 1.5em);
   font-family: "Nunito", sans-serif;
 }
-
 main textarea {
-  min-height: 200px;
+  min-height: 150px;
 }
-
 main button {
   border: 0;
   border-radius: 3px;
@@ -115,22 +107,17 @@ main button {
   background: #d19c8d;
   color: #fff;
 }
-
 main button:hover {
   cursor: pointer;
   background: #24456b;
-  -webkit-transition-duration: 500ms;
-          transition-duration: 500ms;
+  transition-duration: 500ms;
 }
 
 .thanks {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin: 0 auto;
   height: 90vh;
 }
-
 .thanks h1 {
   margin: auto;
   font-family: "Leckerli One", cursive;
@@ -141,13 +128,6 @@ main button:hover {
 
 @media only screen and (min-width: 720px) {
   form, input, textarea {
-    max-width: 700px;
+    max-width: 650px;
   }
-}
-
-@media only screen and (min-width: 920px) {
-  form, input, textarea {
-    max-width: 1000px;
-  }
-}
-/*# sourceMappingURL=contact.css.map */
+}/*# sourceMappingURL=contact.css.map */
