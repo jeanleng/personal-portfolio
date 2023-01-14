@@ -32,6 +32,7 @@ a {
 nav {
   display: block;
   width: 100%;
+  height: auto;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -39,6 +40,14 @@ nav {
   text-align: center;
   background: #f4e1da;
   border-top: 0.3em solid #d19c8d;
+}
+nav .logo {
+  display: inline-block;
+  position: absolute;
+  padding: 0.6em 0.8em;
+  font-family: "Leckerli One", cursive;
+  color: #24456b;
+  font-size: 1.5rem;
 }
 nav .hamburger {
   display: inline-block;
@@ -54,7 +63,7 @@ nav .hamburger div {
   height: 0.14em;
   margin: 0.4em;
   border-radius: 50px;
-  transition: all ease-in-out 0.5s;
+  transition: all ease-in-out 0.35s;
 }
 nav .hamburger.active .hb1 {
   transform: rotate(-45deg) translate(-0.4em, 0.4em);
@@ -67,19 +76,29 @@ nav .hamburger.active .hb3 {
   transform: rotate(45deg) translate(-0.4em, -0.4em);
 }
 nav .navlinks {
-  display: none;
+  position: absolute;
+  width: 0;
+  margin: 0 auto;
+  overflow: hidden;
+  padding-bottom: 1em;
   opacity: 0;
 }
 nav .navlinks.active {
   display: block;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  transform: translate(0, 0);
   opacity: 1;
-  transition-duration: 0.5ms;
+  -webkit-animation: navSlide 0.5s ease-in-out;
+          animation: navSlide 0.5s ease-in-out;
 }
 nav .navlinks a {
   display: block;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
+  transform: translate(0, 0);
   padding: 1em;
   margin: 0 auto;
   font-size: 0.8rem;
@@ -95,9 +114,9 @@ nav .navlinks a::after {
   height: 0.15em;
   background: #d19c8d;
   border-radius: 5px;
-  opacity: 0%;
+  opacity: 0;
   bottom: -0.8em;
-  transition: all ease-in-out 0.5s;
+  transition: all ease-in-out 0.35s;
 }
 nav .navlinks a:hover::after {
   opacity: 1;
@@ -107,17 +126,44 @@ nav .navlinks a:hover {
   color: #d19c8d;
 }
 
-@media only screen and (min-width: 720px) {
+@media only screen and (min-width: 680px) {
+  nav .logo {
+    display: none;
+  }
   nav .hamburger {
     display: none;
   }
   nav .navlinks {
     display: block;
+    position: relative;
+    width: 100%;
+    padding: 0;
     opacity: 1;
+    transform: translate(0);
   }
   nav .navlinks a {
     display: inline-block;
     padding: 1em 2em;
+  }
+}
+@-webkit-keyframes navSlide {
+  from {
+    opacity: 0;
+    transform: translateX(5em);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes navSlide {
+  from {
+    opacity: 0;
+    transform: translateX(5em);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0);
   }
 }
 .section heading {
