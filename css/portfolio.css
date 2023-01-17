@@ -85,7 +85,6 @@ nav .navlinks {
 nav .navlinks.active {
   display: block;
   position: relative;
-  height: 100%;
   width: 100%;
   padding-bottom: 1em;
   opacity: 1;
@@ -162,18 +161,6 @@ nav .navlinks a:hover {
     transform: translate(0);
   }
 }
-.section heading {
-  background: #e3e9f0;
-  padding: 4em 2em;
-  transform: skewY(-3deg);
-  margin-top: 3em;
-}
-.section heading > div, .section heading section {
-  transform: skewY(3deg);
-  display: flex;
-  align-items: center;
-}
-
 .title {
   display: block;
   font-family: "Leckerli One", cursive;

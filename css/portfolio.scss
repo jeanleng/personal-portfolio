@@ -1,19 +1,6 @@
 @import "./assets";
 @import "./base";
 
-.section heading {
-    background: $bgColor2;
-    padding: 4em 2em;
-    transform: skewY(-3deg);
-    margin-top: 3em;
-    
-    & > div, section {
-        transform: skewY(3deg);
-        display: flex;
-        align-items: center;
-    }
-}
-
 .title {
     display: block;
     font-family: $titleFont;
