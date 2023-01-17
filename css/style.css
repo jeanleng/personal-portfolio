@@ -80,7 +80,6 @@ nav .navlinks {
   width: 0;
   margin: 0 auto;
   overflow: hidden;
-  padding-bottom: 1em;
   opacity: 0;
 }
 nav .navlinks.active {
@@ -88,7 +87,7 @@ nav .navlinks.active {
   position: relative;
   height: 100%;
   width: 100%;
-  transform: translate(0, 0);
+  padding-bottom: 1em;
   opacity: 1;
   -webkit-animation: navSlide 0.5s ease-in-out;
           animation: navSlide 0.5s ease-in-out;
@@ -98,7 +97,6 @@ nav .navlinks a {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  transform: translate(0, 0);
   padding: 1em;
   margin: 0 auto;
   font-size: 0.8rem;
@@ -137,9 +135,7 @@ nav .navlinks a:hover {
     display: block;
     position: relative;
     width: 100%;
-    padding: 0;
     opacity: 1;
-    transform: translate(0);
   }
   nav .navlinks a {
     display: inline-block;
